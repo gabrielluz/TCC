@@ -1,0 +1,6 @@
+<div class="login-panel">
+  <input type="text" pInputText placeholder="E-mail">
+  <input type="password" pInputText placeholder="Senha">
+  <p-dropdown [options]="modulos" [(ngModel)]="moduloSelecionado" [style]="{'width':'100%'}"></p-dropdown>
+  <button pButton type="button" label="Entrar" (click)="entrar()"></button>
+</div>

@@ -12,6 +12,8 @@
   },
   "private": true,
   "dependencies": {
+    "primeng": "^4.1.0",
+    "font-awesome": "^4.7.0",
     "@angular/animations": "^4.3.6",
     "@angular/common": "^4.2.4",
     "@angular/compiler": "^4.2.4",
