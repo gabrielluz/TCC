@@ -1,4 +1,4 @@
-import { Router } from '@angular/router';
+import { NavigationExtras, Router } from '@angular/router';
 import { SelectItem } from 'primeng/primeng';
 import { Component, OnInit } from '@angular/core';
 
@@ -21,8 +21,8 @@ export class TelaLoginComponent implements OnInit {
     this.modulos = new Array();
     this.modulos.push({label: 'Selecione um modulo', value: null});
     this.modulos.push({label: 'Restaurante', value: 'restaurante'});
-    this.modulos.push({label: 'Administrador', value: 'administrador'});
-    this.modulos.push({label: 'Empresa', value: 'empresa'});
+    this.modulos.push({label: 'Administrador', value: 'administrativo'});
+    this.modulos.push({label: 'Empresa', value: 'empresarial'});
   }
 
   entrar() {
