@@ -43,15 +43,13 @@ import { DashboardEmpresarialComponent } from './dashboard-empresarial/dashboard
         path: 'administrativo',
         component: HomeAdministrativoComponent
       }, {
+        //Voce coloca o componente em uma rota, e os filhos dele herdarao o layout. Saindo no router-outlet
         path: 'empresarial',
         component: HomeEmpresaComponent,
-        canActivateChild: ['dashboard']
+        children: [{ path: 'dashboard', component: DashboardEmpresarialComponent}]
       }, {
         path: 'restaurante',
         component: HomeRestauranteComponent
-      }, {
-        path: 'empresarial/dashboard',
-        component: DashboardEmpresarialComponent
       }, {
         path: '',
         redirectTo: 'login',
